@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/juanl.restituyo/Projects/HistoriaClinica/HistoriaClinica/HistoriaClinica.csproj": {}
+    "/Users/juanl.restituyo/Projects/HistoriaClinica/HistoriaClinica.csproj": {}
   },
   "projects": {
-    "/Users/juanl.restituyo/Projects/HistoriaClinica/HistoriaClinica/HistoriaClinica.csproj": {
+    "/Users/juanl.restituyo/Projects/HistoriaClinica/HistoriaClinica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/juanl.restituyo/Projects/HistoriaClinica/HistoriaClinica/HistoriaClinica.csproj",
+        "projectUniqueName": "/Users/juanl.restituyo/Projects/HistoriaClinica/HistoriaClinica.csproj",
         "projectName": "HistoriaClinica",
-        "projectPath": "/Users/juanl.restituyo/Projects/HistoriaClinica/HistoriaClinica/HistoriaClinica.csproj",
+        "projectPath": "/Users/juanl.restituyo/Projects/HistoriaClinica/HistoriaClinica.csproj",
         "packagesPath": "/Users/juanl.restituyo/.nuget/packages/",
-        "outputPath": "/Users/juanl.restituyo/Projects/HistoriaClinica/HistoriaClinica/obj/",
+        "outputPath": "/Users/juanl.restituyo/Projects/HistoriaClinica/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/juanl.restituyo/.config/NuGet/NuGet.Config"
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.104/RuntimeIdentifierGraph.json"
         }
       }
     }
