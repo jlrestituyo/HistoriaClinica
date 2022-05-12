@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{1DB0DEA5-22D6-4C8B-B701-312D31EB8AC1}|Default">
+  <MonoDevelop.Ide.ItemProperties.HistoriaClinica PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/pages/forms/basic_elements.html">
+    <Files>
+      <File FileName="wwwroot/pages/forms/basic_elements.html" Line="34" Column="24" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HistoriaClinica" expanded="True">
+            <Node name="HistoriaClinica" expanded="True">
+              <Node name="wwwroot" expanded="True">
+                <Node name="pages" expanded="True">
+                  <Node name="forms" expanded="True">
+                    <Node name="basic_elements.html" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
