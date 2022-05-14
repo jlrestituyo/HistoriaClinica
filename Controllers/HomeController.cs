@@ -24,7 +24,20 @@ namespace HistoriaClinica.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult RegistroPaciente()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult RegistroPaciente(RegistroPaciente registroPaciente)
         {
             return View();
         }
