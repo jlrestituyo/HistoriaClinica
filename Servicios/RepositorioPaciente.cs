@@ -17,7 +17,7 @@ namespace HistoriaClinica.Servicios
 
         public RepositorioPaciente(IConfiguration configuration)
         {
-            connectionString = configuration.GetConnectionString("DefaultConnectio");
+            connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
         public void RegistrarPaciente(RegistroPaciente registroPaciente)
@@ -27,7 +27,7 @@ namespace HistoriaClinica.Servicios
                 conexion.Query($@"insert into RegistroPaciente " +
                     "(username, email, password, confirmacion)" +
                     "values" +
-                    "(@nombre_usuario, @email, @password, @confirmacion) ", registroPaciente);
+                    "(@nombre_usuario, @email, @password, @confirmar_password) ", registroPaciente);
             }
         }
     }

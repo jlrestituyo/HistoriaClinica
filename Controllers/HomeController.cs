@@ -6,17 +6,22 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using HistoriaClinica.Models;
+using HistoriaClinica.Servicios;
 
 namespace HistoriaClinica.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IRepositorioPaciente repositorioPaciente;
+        
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IRepositorioPaciente repositorioPaciente)
         {
-            _logger = logger;
+            this.repositorioPaciente = repositorioPaciente;
+            
         }
+
+       
 
         public IActionResult Index()
         {
@@ -39,6 +44,7 @@ namespace HistoriaClinica.Controllers
         [HttpPost]
         public IActionResult RegistroPaciente(RegistroPaciente registroPaciente)
         {
+            repositorioPaciente.RegistrarPaciente(registroPaciente);
             return View();
         }
 
