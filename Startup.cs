@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using HistoriaClinica.Servicios;
 
 namespace HistoriaClinica
 {
@@ -23,6 +24,7 @@ namespace HistoriaClinica
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddTransient<IRepositorioPaciente, RepositorioPaciente>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
