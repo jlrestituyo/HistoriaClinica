@@ -22,13 +22,28 @@ namespace HistoriaClinica.Servicios
 
         public void RegistrarPaciente(RegistroPaciente registroPaciente)
         {
+
+
             using (var conexion = new SqlConnection(connectionString))
             {
-                conexion.Query($@"insert into RegistroPaciente " +
-                    "(username, email, password, confirmacion)" +
-                    "values" +
-                    "(@nombre_usuario, @email, @password, @confirmar_password) ", registroPaciente);
+
+                try {
+                    conexion.Query($@"insert into RegistroPaciente " +
+                                        "(username, email, password, confirmacion)" +
+                                        "values" +
+                                        "(@nombre_usuario, @email, @password, @confirmar_password) ", registroPaciente);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Ttest");
+                }
+
+                
             }
+
+                               
         }
+
+
     }
 }

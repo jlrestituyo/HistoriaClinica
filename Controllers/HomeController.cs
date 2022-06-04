@@ -44,8 +44,17 @@ namespace HistoriaClinica.Controllers
         [HttpPost]
         public IActionResult RegistroPaciente(RegistroPaciente registroPaciente)
         {
-            repositorioPaciente.RegistrarPaciente(registroPaciente);
-            return View();
+
+            if (ModelState.IsValid) {
+                repositorioPaciente.RegistrarPaciente(registroPaciente);
+                return View();
+            }
+            else
+            {
+                return View(registroPaciente);
+            }
+
+
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
