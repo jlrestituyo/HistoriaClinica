@@ -8,10 +8,12 @@
     <None Remove="Dapper" />
     <None Remove="Microsoft.Data.SqlClient" />
     <None Remove="Servicios\" />
+    <None Remove="xunit" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.123" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="4.1.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Servicios\" />
