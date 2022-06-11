@@ -42,11 +42,13 @@ namespace HistoriaClinica.Controllers
         }
 
         [HttpPost]
-        public IActionResult RegistroPaciente(RegistroPaciente registroPaciente)
+        public async Task<IActionResult> RegistroPaciente(RegistroPaciente registroPaciente)
         {
 
             if (ModelState.IsValid) {
-                repositorioPaciente.RegistrarPaciente(registroPaciente);
+                await repositorioPaciente.RegistrarPaciente(registroPaciente);
+                registroPaciente.nombre_usuario = "";
+                registroPaciente.email = "";
                 return View();
             }
             else
