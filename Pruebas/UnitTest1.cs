@@ -11,10 +11,10 @@ namespace Pruebas
         {
             RepositorioPaciente repositorioPaciente = new RepositorioPaciente();
             RegistroPaciente registroPaciente = new RegistroPaciente();
-            registroPaciente.nombre_usuario = "Test-Usuario";
+            registroPaciente.username = "Test-Usuario";
             registroPaciente.email = "test@mail.com";
             registroPaciente.password = "Test-password";
-            registroPaciente.confirmar_password = "Test-confirmar";
+            registroPaciente.confirmacion = "Test-confirmar";
             registroPaciente.recordarme = "Test-Yes";
 
             int regitrosOld = repositorioPaciente.CantidadRegistros();

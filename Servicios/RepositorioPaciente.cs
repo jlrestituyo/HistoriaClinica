@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Dapper;
@@ -10,6 +11,7 @@ namespace HistoriaClinica.Servicios
 {
     public interface IRepositorioPaciente {
         Task RegistrarPaciente(RegistroPaciente registroPaciente);
+        Task<IEnumerable<RegistroPaciente>> Obtener();
     }
 
     public class RepositorioPaciente: IRepositorioPaciente
@@ -41,7 +43,7 @@ namespace HistoriaClinica.Servicios
                    await conexion.QueryAsync($@"insert into RegistroPaciente " +
                                         "(username, email, password, confirmacion)" +
                                         "values" +
-                                        "(@nombre_usuario, @email, @password, @confirmar_password) ", registroPaciente);
+                                        "(@username, @email, @password, @confirmacion) ", registroPaciente);
                 }
                 catch (Exception e)
                 {
@@ -64,6 +66,12 @@ namespace HistoriaClinica.Servicios
             }
 
             return cantidadRegistros;
+        }
+
+        public async Task<IEnumerable<RegistroPaciente>> Obtener()
+        {
+            using var conexion = new SqlConnection(connectionString);
+            return await conexion.QueryAsync<RegistroPaciente>(@"Select * from RegistroPaciente");
         }
 
 
